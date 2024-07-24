@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        height: 3000px;
+      }
+      .header {
+        background-color: #4a2423;
+        display: flex;
+        height: 50px;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      .nav-right {
+        height: 50px;
+        width: 450px;
+        padding-top: 10px;
+        justify-content: space-between;
+      }
+      .nav-left {
+        height: 50px;
+        width: 450px;
+        padding-top: 10px;
+      }
+      .nav-left ul li {
+        display: inline-block;
+        justify-content: space-around;
+        margin: 8px;
+        color: white;
+      }
+      .nav-right ul li {
+        display: inline-block;
+        justify-content: space-around;
+        margin: 8px;
+      }
+      .nav-left ul li a {
+        text-decoration: none;
+        color: white;
+        gap: 20px;
+      }
+      .nav-left ul li a:hover {
+        background-color: #db4340;
+      }
+      .nav-right ul li a:hover {
+        background-color: #db4340;
+      }
+
+      .nav-right ul li a {
+        text-decoration: none;
+        color: white;
+        gap: 20px;
+      }
+      .nav-right ul li a:hover {
+        background-color: #db4340;
+      }
+      .header2 {
+        background-color: #643231;
+        display: flex;
+        height: 50px;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+      .right {
+        height: 50px;
+        width: 450px;
+        padding-top: 10px;
+        justify-content: space-between;
+        color: white;
+        font-size: 15px;
+      }
+      .left {
+        height: 50px;
+        width: 450px;
+        padding-top: 10px;
+        color: white;
+      }
+      .left ul li {
+        display: inline-block;
+        justify-content: space-around;
+        color: white;
+        margin: 3px;
+        font-size: 17px;
+      }
+      .right ul li {
+        display: inline-block;
+        justify-content: space-around;
+        margin: 8px;
+      }
+      .left ul li a {
+        text-decoration: none;
+        color: white;
+        gap: 15px;
+      }
+      .right ul li a {
+        text-decoration: none;
+        color: white;
+        gap: 20px;
+      }
+      .container {
+        display: flex;
+      }
+      .shoes {
+        display: flex;
+        flex-direction: row;
+        background-color: #dbd6d1;
+      }
+      .shoes img {
+        filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5));
+      }
+      .section {
+        padding-top: 75px;
+        padding-left: 75px;
+      }
+      .section h1 {
+        font-size: 55px;
+        color: #4a2423;
+        font-family: Arial, sans-serif;
+      }
+      .section h2 {
+        font-size: 35px;
+        padding-top: 10px;
+        font-family: Arial, sans-serif;
+        color: #ff7270;
+      }
+      .section p {
+        color: grey;
+        font-family: Arial, sans-serif;
+        padding-top: 15px;
+      }
+      .section button {
+        background-color: #ff7270;
+        color: white;
+        width: 175px;
+        height: 35px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      .section button:hover {
+        box-shadow: 10px;
+        background-color: #db4340;
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+      }
+      .section button:active {
+        filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5));
+      }
+      .image2 {
+        display: flex;
+      }
+      .one {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .one img {
+        padding-top: 20px;
+      }
+      .right2 {
+        display: flex;
+        align-items: center;
+      }
+      .left2 img {
+        margin-top: -195px;
+      }
+      .right-up img {
+        margin-left: -345px;
+        margin-top: 175px;
+      }
+      .right-down img {
+        margin-left: -165px;
+        margin-top: 177px;
+      }
+      .section2 {
+        text-align: center;
+        color: grey;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        padding-top: 45px;
+      }
+      .section2 h1 {
+        word-spacing: 15px;
+      }
+      .two{
+        gap: 20px;
+      }
+      .shoes2{
+        display: flex;
+        margin-left: 170px;
+        gap: 20px;
+        padding-top: 20px;
+      }
+      .shoes2 :hover img{
+        filter: drop-shadow(8px 8px 16px rgba(0, 0, 0, 0.5));
+        cursor: pointer;
+      }
+      .section3{
+        padding-top: 110px;
+        background-color: #4a2423;
+        height:300px ;
+        
+      }
+      .container3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .text{
+        background-color: #5F4444;
+        opacity: 65%;
+        padding-top: 25px;
+        color: white;
+        height: 120px;
+        max-width: 700px;
+        text-align: center;
+        margin: 0px auto;
+      }
+      .stars{
+        justify-content: center;
+        cursor: pointer;
+        margin-top: -85px;
+        margin-left: 350px;
+        opacity: 75%;
+        filter: drop-shadow(8px 8px 16px rgba(88, 88, 88, 0.5));
+        gap: 20px;
+      }
+      .section4{
+        font-family: Arial, sans-serif;
+        color: #4a2423;
+        justify-content: center;
+        align-items: center;
+        margin-left: 400px;
+        padding-top: 30px;
+      }
+      .latest{
+        display: flex;
+        gap: 10px;
+margin-left: 100px;
+      }
+      .latest:hover img{
+        cursor: pointer;
+      }
+      .section5{
+display: flex;
+background-color: #db4340;
+justify-content: space-around;
+height: 110px;
+margin-top: 30px;
+      }
+      .let1{
+padding-top: 20px;
+color: white;
+
+      }
+      .let2{
+        padding-top: 20px;
+      }
+      .let2 button{
+background-color: #633231;
+color: white;
+height: 55px;
+width: 150px;
+cursor: pointer;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="nav-right">
+        <ul>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </div>
+      <div class="nav-left">
+        <ul>
+          <i style="color: white;" class="fa-solid fa-bag-shopping"></i>
+          <li>$46500 4 items</li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header2">
+      <div class="right">
+        <h1>SPORTHOLDS</h1>
+      </div>
+      <div class="left">
+        <ul>
+          <li><a href="#"></a>Home</li>
+          <li><a href="#"></a>Men</li>
+          <li><a href="#"></a>Women</li>
+          <li><a href="#"></a>Children</li>
+          <li><a href="#"></a>Baby</li>
+          <li><a href="#"></a>Our brands</li>
+          <li><a href="#"></a>Sales</li>
+        </ul>
+      </div>
+    </div>
+    <div class="conatiner">
+      <div class="shoes">
+        <img src="shoess.png" alt="" />
+        <div class="section">
+          <p>From $80.00</p>
+          <h1>NIKE AIR MAX</h1>
+          <h2>50 Varients</h2>
+          <p>
+            Since this is our favourite sneaker we are bringing you <br />50
+            varients to suits everyone needs
+          </p>
+          <button>BROWSE VARIENT</button>
+        </div>
+      </div>
+    </div>
+    <div class="one">
+      <img src="shoes2.png" alt="" />
+      <div class="left2">
+        <img src="shoes3.png" alt="" />
+      </div>
+      <div class="right2">
+        <div class="right-up">
+          <img src="shoes4.png" alt="" />
+        </div>
+        <div class="right-down">
+          <img src="shoes5.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="section2">
+        <h1>NEW POPULAR TOP PICKS</h1>
+      </div>
+    </div>
+    <div class="two">
+      <div class="shoes2">
+        <div><img src="shoes6.png" alt=""></div>
+        <div><img src="shoes7.png" alt=""></div>
+        <div><img src="shoes8.png" alt=""></div>
+        <div><img src="shoes9.png" alt=""></div>
+      </div>
+      <div class="shoes2">
+        <div><img src="shoes6.png" alt=""></div>
+        <div><img src="shoes7.png" alt=""></div>
+        <div><img src="shoes8.png" alt=""></div>
+        <div><img src="shoes9.png" alt=""></div>
+      </div>
+    </div>
+    <div class="shoes2">
+      <div><img src="addidas.png" alt=""></div>
+      <div><img src="nike.png" alt=""></div>
+      <div><img src="puma.png" alt=""></div>
+      <div><img src="asics.png" alt=""></div>
+      <div><img src="balance.png" alt=""></div>
+      <div><img src="fila.png" alt=""></div>
+    </div>
+  </div>
+  <div class="conatiner3">
+    <div class="section3">
+      <div class="stars">
+        <img src="st1.png" alt="">
+        <img src="st2.png" alt="">
+        <img src="st3.png" alt="">
+      </div>
+    <div class="text">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus eligendi possimus odit pariatur quam iste perferendis placeat deserunt praesentium, at quis ducimus ex quidem rerum asperiores repellendus obcaecati natus reprehenderit quas sint assumenda. Facilis, repudiandae?</p>
+    </div>
+    </div>
+  </div>
+  <div class="section4">
+    <h1>LATEST NEWS</h1>
+  </div>
+    <div class="latest">
+      <div><img src="lt1.png" alt=""></div>
+      <div><img src="lt2.png" alt=""></div>
+      <div><img src="lt3.png" alt=""></div>
+    </div>
+  </div>
+  </div>
+  <div class="section5">
+    <div class="let1">
+    <h1>LOOKING FOR HELP</h1>
+    <p>Have any questions or need help with order? Let us know!</p>
+    </div>
+    <div class="let2">
+      <button>MAKE AN INQUIRY</button>
+    </div>
+  </div>
+  <div>
+    <img src="last.png" alt="">
+  </div>
+  </body>
+</html>
